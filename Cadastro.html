@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header >
+
+        <img class="imgLogo" src="Imagens/ResfGlobLogoDeitado.png" alt="ResfGlobLogoDeitado">
+          
+        <address class="ender"> Av. Novaya Zemlya, 1870 <br> Cel: (21) 98765-4321 <br> <a href="#">contato@resfriglob.com.br</a> </address>
+    </header>
+
+
+    <nav>
+        <ul >
+            <li><a href="RefriGlobal.html" target="_blank">Apresentação</a></li>
+            <li><a href="Tipos.html" target="_blank">Tipos</a></li>
+            <li><a href="Estoque.html" target="_blank">Estoque</a></li>
+            <li><a href="Cadastro.html" target="_blank">Cadastro</a></li>
+            <li><a href="Compras.html" target="_blank">Compras</a></li>
+        </ul>
+    </nav> 
+
+    <section>
+
+        
+
+<form class="FormBox" id="Formulario" method="post" action="cadastro.js" autocomplete="on"> 
+
+    <fieldset class="FsLinhaInteira" >
+
+        <legend>Identificação</legend>
+
+  
+    
+    
+            <div class="LinhaForm">
+                <p>
+                    <label class="LabBox" class="LabBox" for="iemail">Email:</label>
+                    <input class="InpBoxGnd" type="text" name="email" id="iemail" required; autocomplete="email">
+                </p>
+            </div>
+  
+            <div class="LinhaForm">
+                 <P>    
+                    <label class="LabBox" for="isenha">Senha:</label>
+                    <input class="InpBoxMed" type="password" name="senha" id="isenha" required minlength="8" maxlength="20"  autocomplete="new-password">
+                 </p>
+    
+    
+                <p>
+    
+                     <input class="InpBoxMed1" type="password" name="comfirme" id="iconfirme" required minlength="8" maxlength="20" autocomplete="new-password">
+                    <label class="LabBox1" for="iconfirme">Confirme:</label>
+                </p>
+            </div>
+
+</fieldset>
+
+
+
+
+<fieldset class="FsLinhaInteira">
+
+
+    <legend>Dados Pessoais</legend>
+
+    <div class="LinhaForm">
+        <p>
+            <label class="LabBox" for="inome">Nome:</label>
+
+             <input class="InpBoxGnd" type="text" name="nome" id="inome" maxlength="30" autocomplete="name" required>
+        </p>
+    </div>
+
+    <p>
+
+         <label class="LabBox" for="iend" placeholder="off">Endereço:</label>
+        <textarea class="InpBoxGnd" form="Formulario" rows="3" for="iend">Endereço:</textarea>
+
+    </p>
+
+    <div>
+
+        <p>
+            <label class="LabBox" for="itel">Telefone:</label>
+    
+            <input class="InpBoxMed" type="number" name="tel" id="itel" maxlength="15" autocomplete="tel-local" required>
+        </p>
+    
+    
+        <p>
+
+            <input class="InpBoxMed1" type="number" name="nome" id="icel" maxlength="15" autocomplete="tel"  required>
+
+            <label class="LabBox1" for="icel">Celular:</label>
+    
+            
+        </p>
+
+    </div>
+
+    <fieldset class="FsColEsq">
+
+            <legend>Nascimento.</legend>
+
+        <div class="ColEsq">
+            
+            <input class="numDD" type="number" id="idia" max="2" min="2" autocomplete="bday-day" required>/
+                
+            <input class="numDD" type="number" id="imes" max="2" min="2" autocomplete="bday-month" required> 
+              
+            /<input class="numQD" type="number" id="iano" max="4" min="4" autocomplete="bday-year" required>
+        </div>
+        </fieldset>
+
+        <fieldset class="FsColDir">
+
+            <legend>Sexo</legend>
+
+            <div class="ColDir">
+            
+                <input type="radio" name="isex">Mas
+                <input type="radio" name="isex">Fem
+                <input type="radio" name="isex">Outro
+
+            </div>
+
+    </fieldset>
+        
+</fieldset>
+
+
+
+
+</form>
+  
+
+</p>
+        </section>
+       

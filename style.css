@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+
+
+/*-truetype(ttf)
+-embedded-opentype
+-truetype-att (Apple Advanced Typography)
+-svg*/
+
+
+
+
+@font-face {
+    font-family: 'Unbutu' ;
+    src: url('fontes/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+    font-family: 'liberation';
+    src: url('fontes/liberation_sans/LiberationSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+    
+    
+    body { 
+    background-color: #4488AA;
+    color:  #99FFFF;  
+    font-family:'Stroke','Lucida Bright', 'liberation';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    }
+    
+    p {color: white;}
+    a {color: white;}
+
+    .ender {
+        display: block;
+        margin-bottom: 1px; 
+        float: right; 
+        text-align: center; 
+        line-height: 140%; 
+        font-family: 'Karla', verdana, 'Unbutu';
+        font-size: 15px; 
+        font-weight: normal;
+        }
+ 
+    .imgLogo {
+        border-bottom:solid 3px #ffffff; 
+        margin-bottom: 6px; 
+        padding-bottom: 15px ;
+         }
+
+.apres {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: normal;
+        }
+
+header { 
+    display: block; 
+    margin-bottom: 1px; 
+        }
+
+
+nav { 
+    display: block; 
+    width: 20%; 
+    float: left;
+    height: 450px;
+     }
+#esc {color: #99FFFF;}
+     nav > ul {
+
+        color: #FFFFFF; 
+        line-height: 195%; 
+        margin-top: 40px; 
+        list-style-image: url(Imagens/BrilhoMark.png); 
+        font-size: 20px; 
+        font-family: 'Karla', verdana, 'Unbutu';
+        font-weight: normal;
+        
+     }
+
+     .listatipos {
+        list-style: disc; 
+        margin-left: 250px; 
+        color: #99FFFF; 
+        margin-top: 10px ;}
+     ol {color: #ffffff;}
+
+    /*Tipos*/
+
+
+.tabInfo {
+    border: solid; 
+    border-collapse: collapse; 
+    margin-top: 6px; 
+    background-color: #ffffff; 
+    color: #000066; 
+    font-size: 15px; 
+    font-family: 'Karla', verdana, 'Unbutu';
+    font-weight: normal;
+}
+
+
+td, th {
+
+    border: 3px solid #000066;
+    vertical-align: middle;
+    text-align: center;
+
+}
+
+
+
+.linTH {
+
+    color: #ffffff;
+    background-color: #226699;
+    vertical-align: middle;
+    text-align: center;
+
+}
+
+.listaTipos {
+    margin-left: 250px;
+    color:#99FFFF;
+    list-style: disc;
+
+}
+
+
+/*Estoque*/
+
+.colTH {
+    background-color: #0066DD; 
+    color: #FFFFFF;
+    
+}
+.tabestoque {background-color: #FFFFFF;}
+.preco {color: #CC0000;}
+
+/*Cadastro*/
+
+legend {text-align: left;}
+
+.FormBox {
+
+    width: 520px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    background-color:#0066DD ;
+    border: solid 3px #000055 ;
+    font-size: 16px;
+    font-family: 'Karla', verdana, 'Unbutu';
+    margin-left: 250px;
+    display: block
+}
+
+.LabBox {
+
+    width: 80px;
+    float: left;
+    display: block;
+
+}
+
+
+.LabBox1 {
+
+    width: 80px;
+    float: right;
+    display: block;
+
+}
+.LinhaForm {
+
+    margin: 0px; 
+    height: 30px;
+    padding: 6px 3px 0px 3px;
+   
+
+}
+
+.InpBoxGnd {
+
+    
+    float: block;
+    display: block;
+    width: 384px;
+   
+}
+
+.InpBoxGnd1 {
+
+    
+    float: right;
+    display: block;
+    width: 394px;
+   
+}
+
+.InpBoxMed {
+
+width: 80px;
+float: left;
+display: block;                
+
+}
+
+.InpBoxMed1 {
+
+    width: 80px;
+    float: right;
+    display: block;
+    
+    }
+
+    .FsLinhaInteira {
+
+        color: #FFFFFF;
+        width: 490px;
+        text-align: left;
+       
+    }
+.s {background-color: white;}
+
+    .ColEsq {
+
+   
+        width: 180px;
+        float: left;
+        display: block;
+        margin-left: 15px;
+        
+    }
+
+    .ColDir {
+
+        margin-right: 10px;
+        width: 180px;
+        display: flex;
+        float: right;
+        margin-left: -50px;
+        
+        
+    }
+
+    .numDD{width: 35px;}
+
+.numQD {width: 50px;}
+
+textarea {margin-left: 85px;}
+
+.FsColEsq{
+
+        width: 210px;
+        text-align: center;
+        float: left;
+        
+    }
+
+    .FsColDir {
+
+       
+        width: 210px;
+        text-align: center;
+        float: right;
+        
+        
+
+    }
