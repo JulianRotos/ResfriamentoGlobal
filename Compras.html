@@ -5,10 +5,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compras</title>
-    <link rel="stylesheet" href="style.css">
-    
+<link rel="stylesheet" href="style.css">
+<style>
+
+#loginCad{width: 100%; float: left; display: block; border-color: white; margin: 0;}
+#idEmail{width: 160px; display: flex; ; float: left; margin: 0;}
+#senhaCad{width: 200px; float: right; display: flex; margin-left: 130px;}
+#lisSelProd{width: 100%; display: flex; color: white; }
+#selProduto {width: 60%; display: flex; margin-left: 10px;}
+#btnIncluir{width: 70px; float: right; margin-left: 52px;}
+#boxPedidos{height: 100px; padding: 6px 3px 5px 10px; border-color: white; color: white; }
+#lisPedArea{height: 90%; width: 100%; margin-left: 0; margin-top: 10px;}
+#fsBandeira {width: 110px; text-align: left; float: right; border-color: rgb(255, 255, 255); margin-top: -50px;}
+#numCartao{width: 350px; height: 35px; padding-top: 10px; float: left; display: block; margin-left: -45px;margin-top: -10px;}
+#valCartao{width: 230px; height: 36px; padding-top: 10px; float: left; display: block; margin-top: -15px; margin-left: -26px;}
+#boxParcel{width: 230px; height: 30px; padding-top: 10px; float: left; display: block; margin-left: -208px;margin-top: 15px; }
+
+
+</style>
+
 </head>
 <body>
+
+    <header >
+
+        <img class="imgLogo" src="Imagens/ResfGlobLogoDeitado.png" alt="ResfGlobLogoDeitado">
+          
+        <address class="ender"> Av. Novaya Zemlya, 1870 <br> Cel: (21) 98765-4321 <br> <a href="#">contato@resfriglob.com.br</a> </address>
+    </header>
+
+
+    <nav>
+        <ul >
+            <li><a href="RefriGlobal.html" target="_blank">Apresentação</a></li>
+            <li><a href="Tipos.html" target="_blank">Tipos</a></li>
+            <li><a href="Estoque.html" target="_blank">Estoque</a></li>
+            <li><a href="Cadastro.html" target="_blank">Cadastro</a></li>
+            <li><a href="Compras.html" target="_blank">Compras</a></li>
+        </ul>
+    </nav> 
+
+    <section>
+
+        
+
+<form class="FormBox" id="Formulario2" method="post" action="cadastro.js" autocomplete="on"> 
+
+    <p>Compras</p>
+ 
+
+        <fieldset class="FsLinhaInteira" >
+            <legend>Identificação</legend>
+
+            <div id="loginCad">
     
-</body>
-</html>
+            
+        
+               
+                    
+                        <div id="idEmail">
+                            <label class="LabBox" for="idEmail2">Email:</label>
+                            <input id="iEmail2" type="text" name="email" required; autocomplete="email">
+                        </div>
+                        
+                         <div id="senhaCad">
+                            <label class="LabBoxsen" for="isenha2">Senha:</label>
+                            <input type="password" name="senha" id="isenha2" required minlength="8" maxlength="20"  autocomplete="current-password">
+                         </div>
+                         <p class="textleft">Se você ainda não tem cadastro clique <a href="Cadastro.html">aqui!</a></p>
+                    
+                </div>
+    </fieldset>
+    
+    
+    
+    
+    <fieldset class="FsLinhaInteira">
+    
+    
+        <legend>Lista de Compras</legend>
+
+        <div id="lisSelProd">
+    
+        <label for="selProduto">Produtos:</label>
+
+           
+               <select name="produtos" id="selProduto">
+                <option value="empty">-----</option>
+                <optgroup label="Split"><option value="ss12000">Springer Split 12000</option></optgroup>
+                <optgroup label="Parede">
+                    <option value="sm12000">Springer Midea 12000</option>
+                    <option value="Cons7500"> Consul 7500</option>
+                </optgroup>
+                <optgroup label="Portátil"><option value="eec9000">Elgin Eco Cube 9000</option></optgroup>
+               </select>
+               <input id="btnIncluir" type="button" value="Incluir">
+        </div>
+        
+      
+            <textarea id="lisPedArea" form="Formulario2" rows="3" for="iend"></textarea>
+
+    
+        <div>
+        
+            <p>
+    
+                <input class="InpBoxMed1" type="number" name="nome" id="ivalue" maxlength="15" required>
+    
+                <label class="LabBox1" for="value">Valor: R$</label>
+              
+            </p>
+    
+        </div>
+
+    </fieldset>
+
+        <fieldset id="boxPedidos" >
+    
+        <legend>Dados do cartão</legend>
+    
+            <div id="numCartao">
+                
+                <label class="numcard" for="numcard0">Número:</label>
+                <input class="numDD" type="number" id="numcard0" required>    
+                <input class="numDD" type="number" id="numcard1" required> 
+                <input class="numDD" type="number" id="numcard2" required>
+                <input class="numDD" type="number" id="numcard3" required>
+                
+            </div>
+
+            <div id="valCartao">
+                <label for="valid">Validade:</label>
+                <input class="numDD" type="number" id="valid" required>&nbsp;/
+                <input class="numDD" type="number" id="valid1" required>
+            </div>
+
+            <div id="boxParcel">
+
+                <label for="parcel">Parcelas:</label>
+                <input class="numDD" type="number" id="parcel" required> x Sem Juros
+
+            </div>
+
+            
+            <div id="fsBandeira">
+                
+                <fieldset>
+                <legend>Bandeira</legend>
+
+                <input type="radio" name="band">Visa <br>
+                <input type="radio" name="band">Master <br>
+                <input type="radio" name="band">Elo
+
+            </fieldset>
+            
+            
+
+            </div>
+    
+</form>
+        </section>
+       

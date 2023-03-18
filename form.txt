@@ -1,0 +1,50 @@
+ <p>
+            <label for="iemail">Email:</label>
+            <input type="text" name="email" id="iemail" required size="8" autocomplete="email">
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="8" autocomplete="new-password">
+        </p>
+        <p>
+            <label for="iconfirme">Confirme:</label>
+            <input type="password" name="comfirme" id="iconfirme" required minlength="8" maxlength="20" size="8" autocomplete="new-password">
+</p>
+
+
+
+
+
+
+
+  <p>
+            <label for="inome">Nome:</label>
+    
+            <input type="text" name="nome" id="inome" maxlength="30" autocomplete="name" required>
+        </p>
+    
+        <p>
+            <textarea form="" rows="3" for="iend">Endereço:</textarea>
+    
+            <input type="text" name="end" id="iend"  autocomplete="name" required>
+        </p>
+    
+    
+        <p>
+            <label for="itel">Telefone:</label>
+    
+            <input type="number" name="tel" id="itel" maxlength="15" autocomplete="tel-local" required>
+        </p>
+    
+    
+        <p>
+            <label for="icel">Celular:</label>
+    
+            <input type="number" name="nome" id="icel" maxlength="15" autocomplete="tel"  required>
+        </p>
+    
+        <p>
+            <label for="inas">Nascimento?</label>
+    
+            <input type="date" name="inas" id="inas" autocomplete="bday-day"  required>
+        </p>

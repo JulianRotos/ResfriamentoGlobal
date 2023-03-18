@@ -150,6 +150,7 @@ legend {text-align: left;}
 .FormBox {
 
     width: 520px;
+    
     padding: 10px;
     margin-top: 10px;
     text-align: center;
@@ -157,8 +158,9 @@ legend {text-align: left;}
     border: solid 3px #000055 ;
     font-size: 16px;
     font-family: 'Karla', verdana, 'Unbutu';
-    margin-left: 250px;
-    display: block
+    display: inline-block;
+
+    
 }
 
 .LabBox {
@@ -189,7 +191,7 @@ legend {text-align: left;}
 .InpBoxGnd {
 
     
-    float: block;
+    
     display: block;
     width: 384px;
    
@@ -221,13 +223,13 @@ display: block;
     }
 
     .FsLinhaInteira {
-
         color: #FFFFFF;
         width: 490px;
         text-align: left;
+        border-color: #FFFFFF;
        
     }
-.s {background-color: white;}
+.s {background-color: white solid;}
 
     .ColEsq {
 
@@ -261,6 +263,7 @@ textarea {margin-left: 85px;}
         width: 210px;
         text-align: center;
         float: left;
+        border-color: #FFFFFF;
         
     }
 
@@ -270,7 +273,26 @@ textarea {margin-left: 85px;}
         width: 210px;
         text-align: center;
         float: right;
+        border-color: #FFFFFF;
         
-        
+    }
+
+    
+    .botoes {
+
+        text-align: right;
+        margin: 110px 10px 0px 10px;
+
 
     }
+
+    .textleft {
+        padding-top: 10px;
+     
+        font-style: italic;
+    }
+.textleft > a {color: #99FFFF; text-decoration: none;}
+.LabBoxsen {margin-left: 30px;}
+#isenha2 {width: 80px; margin-left: 22px; }
+#iEmail2 {width: 160px;margin-left: 32px;}
+.numcard {margin-left: 5px;}
