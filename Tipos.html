@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tipos</title>
 <link rel="stylesheet" href="style.css">
+<script src="scripts-tipos.js" defer></script>
 
 </head>
 
@@ -21,7 +22,7 @@
     
     <nav>
         <ul >
-            <li><a href="index.html" target="_blank">Apresentação</a></li>
+            <li><a href="RefriGlobal.html" target="_blank">Apresentação</a></li>
             <li><a href="Tipos.html" target="_blank">Tipos</a></li>
             <li><a href="Estoque.html" target="_blank">Estoque</a></li>
             <li><a href="Cadastro.html" target="_blank">Cadastro</a></li>
@@ -35,67 +36,76 @@
     <section>
        
      
-                <ol>
+        <ol>
 
                     <p id="esc">Como escolher um ar-condicionado?</p>
        
-                    <li>Tipo:</li>
+                    <li><a class="janelatipos" href="#">Tipo:</a></li>
+
+                    <div>
+                        <ul class="listatipospopup" >
+                            
+                            <h1>Tipos de <br> Ar-condicionado</h1>
+                            <li>de parede</li><li>Spliter</li><li>Portátil</li><br>
                         
-                    <ul class="listatipos"><li>de parede</li><li>Spliter</li><li>Portátil</li><br></ul>
+                        <button type="submit" class="botao">Fechar</button></ul>
+                    </div>
                     
-                    <li>Capacidade</li>
-                </ol>
+                    <li ><a class="caplink" href="#">Capacidade</a></li>
+        </ol>
 
             
-                <table class="tabInfo">
+               
+                    <span class="tabInfo0">
+                        <table class="tabInfo">
+                        
+                        <thead class="linTH">
+                            <tr >
+                                <th rowspan="2">Área</th>
+                                    <th colspan="2">Incidência do Sol</th>
+                        
+                            </tr>
+                            <tr>
+                                <th>Manhã</th>
+                                <th>Tarde</th>
+                        </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <td>9 m2</td>
+                                <td>7500 BTUs</td>
+                                <td>9000 BTUs</td>
+                        
+                            </tr>
+                            <tr>
+                                <td>12 m2</td>
+                                <td>9000 BTUs</td>
+                                <td>10000 BTUs</td>
+                        
+                            </tr>
+                            <tr>
+                                <td>25 m2</td>
+                                <td>12000 BTUs</td>
+                                <td>15 BTUs</td>
+                        
+                            </tr>
+                            <tr>
+                                <td>50 m2</td>
+                                <td>21000 BTUs</td>
+                                <td>30000 BTUs</td>
+                        
+                            </tr>
+                        </tbody>
+                        
+                        </table>
+                        <button type="submit" class="botao1">Fechar</button></ul>
+                    </span>
 
-<thead class="linTH">
-    <tr >
-        <th rowspan="2">Área</th>
-            <th colspan="2">Incidência do Sol</th>
-    
-    </tr>
-    <tr>
-        <th>Manhã</th>
-        <th>Tarde</th> 
-</tr>
-</thead>
-
-<tbody>
-    <tr>
-        <td>9 m2</td>
-        <td>7500 BTUs</td>
-        <td>9000 BTUs</td>
-    
-    </tr>
-    <tr>
-        <td>12 m2</td>
-        <td>9000 BTUs</td>
-        <td>10000 BTUs</td>
-    
-    </tr>
-    <tr>
-        <td>25 m2</td>
-        <td>12000 BTUs</td>
-        <td>15 BTUs</td>
-    
-    </tr>
-    <tr>
-        <td>50 m2</td>
-        <td>21000 BTUs</td>
-        <td>30000 BTUs</td>
-    
-    </tr>
-</tbody>
-
-
-                </table>
-
-                
-            
-        
+                    
             
     </section>
+
 
 </body>
 </html>

@@ -12,12 +12,37 @@
 
 @font-face {
     font-family: 'Unbutu' ;
-    src: url('fontes/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+    src: url('fontes/Ubuntu-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     
-    font-family: 'liberation';
-    src: url('fontes/liberation_sans/LiberationSans-Regular.ttf') format('truetype');
+    font-family: 'Liberation';
+    src: url('fontes/LiberationSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'Karla';
+    src: url('fontes/Karla-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+    font-family: 'Stroke';
+    src: url('fontes/Stroke.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+    font-family: 'Lucida Bright';
+    src: url('fontes/lucida-bright.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'Verdana';
+    src: url('fontes/verdana.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'Liberation';
+    src: url('fontes/LiberationSans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     }
@@ -26,7 +51,7 @@
     body { 
     background-color: #4488AA;
     color:  #99FFFF;  
-    font-family:'Stroke','Lucida Bright', 'liberation';
+    font-family: 'Stroke', 'Lucida Bright', 'Liberation';
     font-weight: normal;
     font-style: normal;
     font-size: 16px;
@@ -41,23 +66,27 @@
         float: right; 
         text-align: center; 
         line-height: 140%; 
-        font-family: 'Karla', verdana, 'Unbutu';
+        font-family: 'Karla', 'Verdana', 'Unbutu';
         font-size: 15px; 
         font-weight: normal;
         }
- 
+      
     .imgLogo {
         border-bottom:solid 3px #ffffff; 
         margin-bottom: 6px; 
         padding-bottom: 15px ;
          }
 
-.apres {
+    .apres {
         margin-top: 40px;
         text-align: center;
         font-size: 18px;
         font-weight: normal;
+        
         }
+      
+
+    .apres > p {color: #99EEEE;}
 
 header { 
     display: block; 
@@ -69,21 +98,26 @@ nav {
     display: block; 
     width: 20%; 
     float: left;
-    height: 450px;
+    height: 600px;
+    font-family: 'Karla', 'Verdana', 'Unbutu';
+   
      }
 #esc {color: #99FFFF;}
-     nav > ul {
+    li > a {text-decoration: none; }
+    li > a:visited {color: #99EEEE;  }
+
+    nav > ul {
 
         color: #FFFFFF; 
         line-height: 195%; 
         margin-top: 40px; 
         list-style-image: url(Imagens/BrilhoMark.png); 
         font-size: 20px; 
-        font-family: 'Karla', verdana, 'Unbutu';
+        
         font-weight: normal;
         
      }
-
+   
      .listatipos {
         list-style: disc; 
         margin-left: 250px; 
@@ -95,19 +129,29 @@ nav {
 
 
 .tabInfo {
+    
+    
     border: solid; 
     border-collapse: collapse; 
-    margin-top: 6px; 
+   
     background-color: #ffffff; 
     color: #000066; 
     font-size: 15px; 
     font-family: 'Karla', verdana, 'Unbutu';
     font-weight: normal;
+    
 }
+.tabInfo a {text-decoration: none;}
+
+.tabInfo0 {display: none;}
+
+
+
+.tabInfo0 > button{margin-top: 20px; margin-left: 130px;  }
 
 
 td, th {
-
+    padding:4px 15px ;
     border: 3px solid #000066;
     vertical-align: middle;
     text-align: center;
@@ -151,6 +195,22 @@ legend {text-align: left;}
 
     width: 520px;
     
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    background-color:#0066DD ;
+    border: solid 3px #000055 ;
+    font-size: 16px;
+    font-family: 'Karla', verdana, 'Unbutu';
+    display: inline-block;
+
+    
+}
+
+.FormBox1 {
+
+    width: 520px;
+    height: 475px;
     padding: 10px;
     margin-top: 10px;
     text-align: center;
@@ -296,3 +356,25 @@ textarea {margin-left: 85px;}
 #isenha2 {width: 80px; margin-left: 22px; }
 #iEmail2 {width: 160px;margin-left: 32px;}
 .numcard {margin-left: 5px;}
+
+/* POPUP TIPO  */
+
+
+.poptipobody {; margin: auto;}
+.poptipobody {}
+
+.listatipospopup {
+    
+    display: none;
+    width: 250px;
+    height: 200px;
+    list-style: disc; 
+    margin-left: 250px; 
+    color: #99FFFF; 
+    margin-top: 10px ;
+}
+
+ ol {color: #ffffff;}
+
+ .listatipospopup > button { margin-left: 40px;}
+ .listatipospopup > h1 { text-align: center; margin-left: -80px;}
